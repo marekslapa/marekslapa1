@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Beachview Guest House</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="pictures\logo2.ico" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <img src="pictures\logo2.png" alt="Beachview Logo" class="logo">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="rooms.html">Rooms</a>
+            <div class="dropdown-content">
+              <a href="glasgow.html">Glasgow Room</a>
+              <a href="edinburgh.html">Edinburgh Room</a>
+              <a href="aberdeen.html">Aberdeen Room</a>
+              <a href="dundee.html">Dundee Room</a>
+            </div>
+          </li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="local-area.html">Local Area</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+  
+  <div class="container">
+    <div class="content">
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you! Please get in touch using the details below or fill out our enquiry form.</p>
+      
+      <div class="contact-info">
+        <h3>Contact Details</h3>
+        <p><strong>Address:</strong> 45 Shore Road, Dornoch, IV25 3LY</p>
+        <p><strong>Phone:</strong> 01862 810234</p>
+        <p><strong>Email:</strong> info@beachviewdornoch.co.uk</p>
+      </div>
+      
+      <h3>Find Us</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2183.0550927616364!2d-4.0311!3d57.8794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTfCsDUyJzQ1LjgiTiA0wrAwMScyMi4wIlc!5e0!3m2!1sen!2suk!4v1615374514793!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      
+      <h3>Search Dornoch</h3>
+      <form action="https://www.google.com/search" method="get" target="_blank">
+        <input type="text" name="q" placeholder="Search Google..." style="width: 300px; padding: 5px;">
+        <input type="hidden" name="as_sitesearch" value="dornoch.org">
+        <button type="submit" style="padding: 5px 10px; background-color: #8a2be2; color: white; border: none;">Search</button>
+      </form>
+      
+      <h3>Enquiry Form</h3>
+      <form class="contact-form">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div>
+          <label for="dates">Dates of Stay:</label>
+          <input type="text" id="dates" name="dates">
+        </div>
+        <div>
+          <label for="guests">Number of Guests:</label>
+          <input type="number" id="guests" name="guests" min="1">
+        </div>
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+        </div>
+        <button type="submit">Send Enquiry</button>
+      </form>
+    </div>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 Beachview Guest House. All rights reserved.</p>
+    <p>45 Shore Road, Dornoch, IV25 3LY | Phone: 01862 810234 | Email: info@beachviewdornoch.co.uk</p>
+  </footer>
+</body>
+</html>

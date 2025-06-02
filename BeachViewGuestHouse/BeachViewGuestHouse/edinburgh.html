@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edinburgh Room - Beachview Guest House</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="pictures\logo2.ico" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <img src="pictures\logo2.png" alt="Beachview Logo" class="logo">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="rooms.html">Rooms</a>
+            <div class="dropdown-content">
+              <a href="glasgow.html">Glasgow Room</a>
+              <a href="edinburgh.html">Edinburgh Room</a>
+              <a href="aberdeen.html">Aberdeen Room</a>
+              <a href="dundee.html">Dundee Room</a>
+            </div>
+          </li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="local-area.html">Local Area</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+  
+  <div class="container">
+    <div class="content">
+      <h2>Edinburgh Room</h2>
+      <p>Our Edinburgh double rooms are ideal for couples or solo travelers who enjoy extra space and comfort during their stay.</p>
+      
+      <div class="room-info">
+        <img src="pictures\double1.jpg" alt="Edinburgh Room">
+        <h3>Room Features:</h3>
+        <ul>
+          <li>One comfortable double bed</li>
+          <li>Private ensuite bathroom</li>
+          <li>Sea views</li>
+          <li>Flat-screen TV</li>
+          <li>Tea and coffee making facilities</li>
+          <li>Free WiFi</li>
+          <li>Toiletries</li>
+          <li>Hairdryer</li>
+        </ul>
+        <p>We have 3 Edinburgh rooms available.</p>
+        <p><a href="contact.html">Contact us to book</a></p>
+      </div>
+      
+      <div class="gallery">
+        <img src="pictures\double3.jpg" alt="Edinburgh Room View 1" onclick="openLightbox(this)">
+        <img src="pictures\double4.jpg" alt="Edinburgh Room View 2" onclick="openLightbox(this)">
+        <img src="pictures\edibath.jpg" alt="Edinburgh Room Bathroom" onclick="openLightbox(this)">
+      </div>
+      
+      <div id="lightbox" style="display: none; position: fixed; z-index: 1; padding-top: 100px; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9);">
+        <span style="position: absolute; top: 15px; right: 35px; color: white; font-size: 40px; cursor: pointer;" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" style="margin: auto; display: block; max-width: 80%; max-height: 80%;">
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 Beachview Guest House. All rights reserved.</p>
+    <p>45 Shore Road, Dornoch, IV25 3LY | Phone: 01862 810234 | Email: info@beachviewdornoch.co.uk</p>
+  </footer>
+  
+  <script src="main.js"></script>
+</body>
+</html>
